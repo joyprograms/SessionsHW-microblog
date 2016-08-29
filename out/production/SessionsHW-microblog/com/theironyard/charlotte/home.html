@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{{^username}}
+<form action="/" method="post">
+    <input type="text" placeholder="username here" username="username"/>
+    <button type="submit">Login </button>
+</form>
+{{/username}}
+{{#username}}
+<form action="/login" method="post">
+    <input type="text" placeholder="enter username" username="username"/>
+    <button type="submit" > Login2</button>
+</form>
+
+
+<body>
+
+</body>
+</html>
